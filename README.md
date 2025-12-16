@@ -66,6 +66,23 @@
 | `APIFOX_TOKEN` | Apifox 开放 API 令牌 | Apifox 客户端 -> 账号设置 -> API 访问令牌 |
 | `APIFOX_PROJECT_ID` | 目标项目 ID | 项目概览页 -> 项目设置 -> 基本设置 -> ID |
 
+## 重点⚠️
+### APIFOX_TOKEN获取方式
+<img width="1594" height="1029" alt="截屏2025-12-17 01 58 51" src="https://github.com/user-attachments/assets/aad5da36-a99d-484b-959c-116918897487" />
+
+
+### APIFOX_PROJECT_ID获取方式
+
+<img width="2032" height="1167" alt="截屏2025-12-17 01 57 06" src="https://github.com/user-attachments/assets/a381baf8-7da0-4d88-950c-ac8b78c7af8d" />
+
+
+### 设置项目文档为公开
+ps:我实际使用发现只有设置为文档发布才能正常操作项目
+
+ <img width="1594" height="1029" alt="截屏2025-12-17 01 55 12" src="https://github.com/user-attachments/assets/59cb26ea-26af-47a4-8329-aabe4ec63bce" />
+
+
+
 ## 🚀 使用方法
 
 ### 1. 与 Claude Desktop 配合使用
