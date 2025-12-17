@@ -278,8 +278,17 @@ def create_api_endpoint(
               
         method: 【必填】HTTP 方法: GET, POST, PUT, DELETE, PATCH
         
-        description: 【必填】接口中文描述，说明接口的业务用途
-                     示例: "创建新订单，需要传入商品信息和收货地址"
+        description: 【必填】接口业务说明，用于描述接口的元信息和业务上下文
+                     ⚠️ 只写业务说明，不要包含请求/响应示例！
+                     
+                     ✅ 正确格式（推荐使用结构化说明）:
+                        "【版本】v1\n【环境】REST 接口（后端服务）\n【前置条件】需要用户登录\n【鉴权】Bearer Token"
+                     
+                     ✅ 也可以使用简短描述:
+                        "用户名密码登录换取 access_token，无需鉴权"
+                     
+                     ❌ 错误（不要在这里写示例）:
+                        "POST /api/v1/auth/token ... 成功响应: {\"access_token\":...}"
                
         response_schema: 【必填】成功响应 (200) 的 JSON Schema
                          ⚠️ 每个字段必须有 description 说明
@@ -574,7 +583,7 @@ def update_api_endpoint(
     
     ⚠️ 强制要求 - 同 create_api_endpoint，以下内容必须提供：
     1. title: 中文业务名称
-    2. description: 中文接口描述
+    2. description: 接口业务说明（只写元信息，不写示例！）
     3. response_schema: 成功响应的 JSON Schema（字段必须有 description）
     4. response_example: 成功响应的示例数据
     5. POST/PUT/PATCH 必须提供 request_body_schema 和 request_body_example
