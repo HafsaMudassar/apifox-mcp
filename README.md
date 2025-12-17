@@ -83,19 +83,53 @@ ps:我实际使用发现只有设置为文档发布才能正常操作项目
 
 
 
-## 🚀 使用方法
+## ⚙️ 配置
 
-### 1. 与 Claude Desktop 配合使用
+在使用前，你需要获取以下凭证来连接你的 Apifox 项目。
 
-编辑 Claude Desktop 的配置文件 (通常位于 `~/Library/Application Support/Claude/claude_desktop_config.json` 或 `%APPDATA%\Claude\claude_desktop_config.json`)，添加以下内容：
+| 环境变量 | 描述 | 获取方式 |
+| :--- | :--- | :--- |
+| `APIFOX_TOKEN` | Apifox 开放 API 令牌 | Apifox 客户端 -> 账号设置 -> API 访问令牌 |
+| `APIFOX_PROJECT_ID` | 目标项目 ID | 项目概览页 -> 项目设置 -> 基本设置 -> ID |
+
+## 🐳 使用方法 (Docker)
+
+### 方法一：从源码构建
+
+```bash
+git clone https://github.com/iwen-conf/apifox-mcp.git
+cd apifox-mcp
+docker build -t apifox-mcp .
+```
+
+### 方法二：使用预构建镜像
+
+从 [Releases](https://github.com/iwen-conf/apifox-mcp/releases) 下载 `apifox-mcp.tar`，然后加载：
+
+```bash
+docker load -i apifox-mcp.tar
+```
+
+### 配置 Claude Desktop
+
+编辑 Claude Desktop 的配置文件：
+- **macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
+- **Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
+
+添加以下内容：
 
 ```json
 {
   "mcpServers": {
     "apifox": {
-      "command": "python",
+      "command": "docker",
       "args": [
-        "/path/to/your/project/apifox_mcp/main.py"
+        "run",
+        "-i",
+        "--rm",
+        "-e", "APIFOX_TOKEN",
+        "-e", "APIFOX_PROJECT_ID",
+        "apifox-mcp"
       ],
       "env": {
         "APIFOX_TOKEN": "your_token_here",
@@ -106,18 +140,21 @@ ps:我实际使用发现只有设置为文档发布才能正常操作项目
 }
 ```
 
-请确保将 `/path/to/your/project` 替换为实际的项目路径，并填写正确的 Token 和 Project ID。
+> **注意**: 请将 `your_token_here` 和 `your_project_id_here` 替换为你的实际凭证。
 
-### 2. 作为独立 MCP 服务器运行
+### 3. 命令行运行 (可选)
 
-你也可以直接在命令行中运行它：
+你也可以直接在命令行中测试：
 
 ```bash
-export APIFOX_TOKEN=your_token_here
-export APIFOX_PROJECT_ID=your_project_id_here
+# 使用环境变量
+docker run -i --rm \
+  -e APIFOX_TOKEN=your_token \
+  -e APIFOX_PROJECT_ID=your_project_id \
+  apifox-mcp
 
-# 只要 apifox_mcp 目录在 PYTHONPATH 中，或者在项目根目录下运行
-mcp run apifox_mcp/main.py
+# 或者使用 .env 文件
+docker run -i --rm --env-file .env apifox-mcp
 ```
 
 ## 📝 编写规范
